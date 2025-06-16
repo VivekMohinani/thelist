@@ -1,0 +1,31 @@
+GET http://localhost:9001/entries HTTP/1.1
+###
+
+GET http://localhost:9001/entries/2 HTTP/1.1
+###
+
+
+POST http://localhost:9001/entries HTTP/1.1
+content-type: application/json
+
+{
+    "fname": "test",
+    "lname": "mohinani",
+    "state": "MN",
+    "phone": "1111111111"
+}
+###
+
+PUT http://localhost:9001/entries/2 HTTP/1.1
+content-type: application/json
+
+{
+    "fname": "Vivek",
+    "lname": "Mohinani",
+    "state": "OK",
+    "phone": "2222222222"
+}
+###
+
+DELETE http://localhost:9001/entries/2 HTTP/1.1
+###

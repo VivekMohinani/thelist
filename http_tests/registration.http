@@ -1,0 +1,28 @@
+POST http://localhost:9001/register HTTP/1.1
+content-type: application/json
+
+{
+    "username": "vmohinani",
+    "email": "vivek.mohinani@email.com",
+    "password": "password"
+}
+###
+
+POST http://localhost:9001/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "vivek.mohinani@email.com",
+    "password": "password"
+}
+###
+
+GET http://localhost:9001/validate HTTP/1.1
+
+###
+
+GET http://localhost:9001/users HTTP/1.1
+###
+
+POST http://localhost:9001/logout HTTP/1.1
+###
